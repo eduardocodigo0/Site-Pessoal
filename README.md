@@ -1,6 +1,15 @@
-# site-pessoal
+# Web site pessoal completo.
 
-* Contato
-* Ultimos projetos
+### Tecnologias
+
+* JSP, Servlet, JSTL
+* JDBC
+* Bootstrap
+* Postgreesql
+
+### Recursos
+
+* Pagina de contato com envio de e-mail  
+* Blog (Postagem de texto e imagens)
 
 ### Link: em breve
