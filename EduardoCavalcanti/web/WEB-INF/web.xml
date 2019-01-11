@@ -4,9 +4,17 @@
         <servlet-name>SendMail</servlet-name>
         <servlet-class>servlets.SendMail</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>novoPost</servlet-name>
+        <servlet-class>servlets.novoPost</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>SendMail</servlet-name>
         <url-pattern>/SendMail</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>novoPost</servlet-name>
+        <url-pattern>/novoPost</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

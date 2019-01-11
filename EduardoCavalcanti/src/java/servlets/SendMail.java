@@ -22,6 +22,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+
 /**
  *
  * @author live
@@ -64,15 +65,15 @@ public class SendMail extends HttpServlet {
             
                 Session session = Session.getInstance(props, new javax.mail.Authenticator() {
                     protected PasswordAuthentication getPasswordAuthentication() {
-                        return new PasswordAuthentication("E-mail", "Password");
+                        return new PasswordAuthentication("seu-email@gmail.com", "senha-do-email");
                     }
                 });
                 
                 try{
                     //Building the e-mail
                     MimeMessage message = new MimeMessage(session);
-                    message.setFrom(new InternetAddress("dekistercod23@gmail.com"));
-                    message.addRecipient(Message.RecipientType.TO, new InternetAddress("eduardo_his@hotmail.com"));
+                    message.setFrom(new InternetAddress("seu-email@gmail.com"));
+                    message.addRecipient(Message.RecipientType.TO, new InternetAddress("seu-email@gmail.com"));
                     message.setSubject(subject);
 
                     String content = "From: ["+from+"]\n\n"+text;
